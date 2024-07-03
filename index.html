@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <!-- Student Form -->
+            <div class="box hide">
+                <h1 class="title">Student Details</h1>
+                <div class="containIMG">
+                    <img src="./assets/img/Students.svg" alt="Student IMG" class="studentIMG">
+                </div>
+                <form action="">
+                    <div class="fields">
+                        <label for="schoolName">School Name</label>
+                        <input type="text" name="" id="schoolName" placeholder="Ex. Sarvodaya">
+                    </div>
+                    <div class="fields">
+                        <label for="studentName">Student Name</label>
+                        <input type="text" name="" id="studentName" placeholder="Ex. Arpit">
+                    </div>
+                    <div class="fields">
+                        <label for="dateOfBirth">Date Of Birth</label>
+                        <input type="text" name="" id="dateOfBirth" placeholder="Ex. dd/mm/year">
+                    </div>
+                    <div class="fields">
+                        <label for="className">Class</label>
+                        <input type="text" name="" id="className" placeholder="Ex. 12">
+                    </div>
+                    <div class="fields">
+                        <label for="rollNumber">Roll Number</label>
+                        <input type="number" name="" id="rollNumber" placeholder="Ex. 08">
+                    </div>
+                    <div class="fields">
+                        <label for="contactNumber">Contact Number</label>
+                        <input type="number" name="" id="contactNumber" placeholder="Ex. 9718943257">
+                    </div>
+                    <div class="fields">
+                        <button type="button" onclick="updateCard()">Submit Form</button>
+                        <button type="reset">Clear All</button>
+                    </div>
+                </form>
+            </div>
+            <!-- Dynamic Form -->
+            <div class="box">
+                <h2 class="title">Student Details</h2>
+                <div class="containIMG">
+                    <img src="./assets/img/Student.svg" alt="Student IMG" class="studentIMG">
+                </div>
+                <form action="">
+                    <div class="fields">
+                        <label for="">School Name</label>
+                        <input type="text" name="" id="schoolNameVal" placeholder="Ex. Maharana Pratap">
+                    </div>
+                    <div class="fields">
+                        <label for="">Student Name</label>
+                        <input type="text" name="" id="studentNameVal" placeholder="Ex. Avghesh">
+                    </div>
+                    <div class="fields">
+                        <label for="">Date Of Birth</label>
+                        <input type="text" name="" id="dateOfBirthVal" placeholder="Ex. 01/10/1995">
+                    </div>
+                    <div class="fields">
+                        <label for="">Class</label>
+                        <input type="number" name="" id="classVal" placeholder="Ex. 12">
+                    </div>
+                    <div class="fields">
+                        <label for="">Roll Number</label>
+                        <input type="number" name="" id="rollNumberVal" placeholder="Ex. 07">
+                    </div>
+                    <div class="fields">
+                        <label for="">Contact Number</label>
+                        <input type="number" name="" id="contactNumVal" placeholder="Ex. 9718943257">
+                    </div>
+                    <button type="button" onclick="printStudentID()" class="hide">Print</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- JS -->
+     <script src="./scripts/custom.js"></script>
+</body>
+</html>
